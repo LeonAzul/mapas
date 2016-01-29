@@ -2,7 +2,7 @@
 
 En este archivo se encuentra guardada la sesion que carga los mapas que se analizaron.
 
-Las seciones de el Estado de Mexico en este mapa son 6430 mientras que en el archivo csv hay 6391. Claramente ambos numeros no coinciden por lo que no es posible reconstruir a todos los distritos electorales.
+Las seciones del Estado de Mexico en este mapa son diferentes a la del archivo csv. No se puede reconstruir distritos porque los numeros no concuerdan. Si se tuvieran los mapas de alguno de los años de la base csv si se podrian hacer equivalencias.. 
 
 Lo que se necesita es una base de datos que este acorde al mapa, para que apartir de ella se pueda reconstruir ese año, y por equivalencias los años anteriores. 
 
