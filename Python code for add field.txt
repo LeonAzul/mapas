@@ -1,3 +1,4 @@
+#http://gis.stackexchange.com/questions/3623/how-to-add-custom-feature-attributes-to-shapefile-using-python
 from osgeo import ogr
 
 # Open a Shapefile, and get field names
