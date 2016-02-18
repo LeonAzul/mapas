@@ -15,6 +15,7 @@ loop
   tengo que ir sumando las veces que se hace la operacion
   si la operacion que va hacia el mismo numero se repite la cantidad de veces que dice la segunda parte todo esta bien.
 
+  data$2009[a[1]]
 
 
 
