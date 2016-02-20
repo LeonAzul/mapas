@@ -5,7 +5,9 @@
 data <- read.csv("~/GitHub/mapas/Colima94-13 v1.0(ConNotacionIntegradora).csv", stringsAsFactors = FALSE)
 data$dis2009
 
-a=grep( "\\[[0-9]*\\]\\[[0-9]*-[0-9]*\\]" , data$dis2009)
+
+datshort=cbind(data$seccion ,data$dis2009)
+a=grep( "\\[[0-9]*\\]\\[[0-9]*-[0-9]*\\]" , datshort[,2])
  Ya que se cuales son las que tiene son procedentes de division
 loop
   Tomo el primer numero y veo que tiene adentro
@@ -15,9 +17,10 @@ loop
   tengo que ir sumando las veces que se hace la operacion
   si la operacion que va hacia el mismo numero se repite la cantidad de veces que dice la segunda parte todo esta bien.
 
-  data$2009[a[1]]
-
-
+  b=datshort[,2][a[1]]
+  #regexp("\\[[0-9]*\\]", data$dis2009[a[1]])
+  direcc=regmatches(b,regexpr("[0-9]+",b))
+  datshort[,2][as.numeric(a[1])]=datshort[,2][as.numeric(direcc)]
 
 
 
