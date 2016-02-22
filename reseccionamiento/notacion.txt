@@ -1,0 +1,52 @@
+Hay que buscar acuerdos ife faltantes
+
+general
+(alta, fch, accion, cambio, secc, movs), (baja, fecha, accion, cambio, secc, movs), (otro, fecha, accion, cambio, secc, movs)
+donde
+fch    = yyyymmdd
+cambio = split|consol|limite
+set    = supersetOf|subsetOf
+secc   = sección o vector de secciones que cambiaron
+n      = movimiento n de N
+
+@reseccionamiento{seccion="ags-487",
+   mov=ALTA{
+      fch="2004mmdd",
+      cambio="limite",
+      set="subsetOf",
+      secc="c(366,408,459,404)",
+      n="1/2"
+   }
+   mov=BAJA{
+      fch="2008mmdd",
+      cambio="consol",
+      set="subsetOf",
+      secc="378",
+      n="1/1")
+   }
+}
+
+@reseccionamiento{seccion="ags-488",
+   mov=ALTA{
+      fch="2004mmdd",
+      cambio="limite",
+      set="subsetOf",
+      secc="451",
+      n="2/2"
+   }
+}
+
+col-163
+split
+[337:372]
+(baja, 20091015, split, supersetOf, 337:372, 1/1)
+
+col-337
+from
+[163][1-36]
+(alta, 20091015, split, subsetOf, 163, 1/36)
+
+
+
+
+
