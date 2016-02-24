@@ -1,63 +1,52 @@
-Hay que buscar acuerdos ife faltantes
+seccion = ags|bc|bcs|cam|coa|col|cua|cps|df|dgo|gua|gue|hgo|jal|mex|mic|mor|nay|nl|oax|pue|que|qui|san|sin|son|tab|tam|tla|ver|yuc|zac-núm
+fch     = yyyymmdd
+cambio  = reseccionamiento|integracion|limite|nuevoMun
+set     = supersetOf|subsetOf
+secc    = sección o vector de secciones que cambiaron
+obs     = observaciones (si falta este campo se dará por sentado que no aplica)
 
-fch    = yyyymmdd
-cambio = split|consol|limite
-set    = supersetOf|subsetOf
-secc   = sección o vector de secciones que cambiaron
-n      = movimiento n de N <- no muy útil, ver caso ags-487, drop?
+Ejemplos:
 
-@reseccionamiento{
-   seccion="ags-487",
-   ALTA=c(
+@seccion="ags-487"{
+   @ALTA{
       fch="20040804",
       cambio="limite",
       set="subsetOf",
-      secc="c(366,408,459,404)",
-      n="1/2"
-   ),
-   BAJA=c(
-      fch="2008mmdd",
-      cambio="consol",
+      secc="c(366,408,459,404)"
+   }
+   @BAJA{
+      fch="20081017",
+      cambio="integracion",
       set="subsetOf",
-      secc="378",
-      n="1/1")
-   )
+      secc="378"
+   }
 }
 
-@reseccionamiento{
-   seccion="ags-488",
-   ALTA=c(
+@seccion="ags-488"{
+   @ALTA{
       fch="20040804",
       cambio="limite",
       set="subsetOf",
-      secc="451",
-      n="2/2"
-   )
+      secc="451"
+   }
 }
 
-@reseccionamiento{
-   seccion="col-163",
-   BAJA=c(
+@seccion="col-163"{
+   @BAJA{
       fch="20091015",
-      cambio="split",
+      cambio="reseccionamiento",
       set="supersetOf",
-      secc="337:372",
-      n= "1/1"
-   )
+      secc="337:372"
+   }
 }
 
-@reseccionamiento{
-   seccion="col-337",
-   ALTA=c(
+@seccion="col-337"{
+   @ALTA{
       fch="20091015",
-      cambio="split",
+      cambio="reseccionamiento",
       set="subsetOf",
-      secc=163,
-      n = "1/36"
-   )
+      secc=163
+   }
 }
-
-
-
 
 
